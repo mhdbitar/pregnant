@@ -2,8 +2,158 @@
 <html>
 <head>
 	<title>Pregnant Woman Health Care</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+		.active {
+			background-color: #00A7B6;
+		}
+
+		h2 {
+		    font-size: 40px;
+		    text-align: center;
+		    font-weight: bold;
+		    font-family: sans-serif;
+		    color: #00A7B6;
+		}	
+
+		h3 {
+		    font-size: 30px;
+		    font-family: sans-serif;
+		    color: #00A7B6;
+		}
+
+		.blog {
+			width: 50%;
+		    margin: 0 25%;			
+		}
+
+		.blog img {    
+		    border-radius: 5%;
+		    width: 100%;
+		}
+
+		.blog p {
+			font-size: 20px;
+			color: #777;
+		}
+
+		.blog ol {
+			font-size: 20px;
+			color: #777;	
+		}
+
+		.blog ol li a {
+			color: #00A7B6;
+		}
+
+		input[type=email] {
+		    width: 100%;
+		    padding: 12px 20px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    box-sizing: border-box;
+		}
+
+		button {
+		    background-color: #00a7b6;
+		    color: white;
+		    padding: 14px 20px;
+		    margin: 8px 0;
+		    border: none;
+		    cursor: pointer;
+		    width: 100%;
+		}
+
+		footer {
+			background-color: #333;
+			padding: 1%;
+			color: #fff;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 
+	<ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<h2>Sport for pregnant women</h2>
+
+	<div class="blog">
+		<img src="pr1.jpg">
+		<p><strong>Sport for pregnant women</strong> is beneficial for both mother and baby. It helps to control weight, tone, relieve pain and prepare for childbirth. During this stage it is recommended to do moderate exercise and it is important to ask to the doctor in advance to confirm that there are no complications that could endanger pregnancy.</p>
+		<p>During pregnancy, the woman undergoes many changes both physically and psychologically, and her body is in constant activity to be able to adapt to this new situation. It is important that the sport be moderate and to do it gradually throughout the week taking into account the pregnancy trimester in which the future mother is.</p>
+
+		<h3>Benefits of sport for pregnant women</h3>
+		<p>Practicing sport during pregnancy will help both the mother and the fetus. If you have ask to the doctor and there are no complications in your pregnancy, physical exercise will help you to enjoy this beautiful stage in your life. These are some of the&nbsp;<strong>benefits of sport for pregnant women</strong>:</p>
+		<ol>
+			<li>It improves physical endurance and gives you energy as it helps strengthen the heart and lungs.</li>
+			<li>Strengthens the muscles of the pelvic area.</li>
+			<li>Helps to reduce anxiety and sleep better by releasing stress.</li>
+			<li>Helps to prevent deterioration of joints.</li>
+			<li>It regulates the intestinal rhythm so it reduces digestive discomfort and constipation.</li>
+			<li>It improves blood circulation and lung capacity.</li>
+			<li>It prepares the body for birth by strengthening the muscles.</li>
+			<li>Relieves back pain and helps to improve body posture.</li><li>You could recover faster the silhouette after the birth because you will accumulate less fat.</li>
+			<li>Increases immune defenses.</li>
+			<li>It reduces the likelihood of complications during pregnancy, such as preeclampsia or gestational diabetes.</li>
+			<li>It increases the chance of adopting permanent healthy lifestyles, and this will be passed on to the baby when he was born. So it will be easier to avoid some problems such as&nbsp;<a href="https://liip.care/en/blog/25_chilhood-obesity.html" target="_blank">childhood obesity</a>.</li>
+		</ol>
+		<p>Doing sport during pregnancy is a way to stay healthy and active which will also affect positively the fetus.</p>
+		<img src="pr2.jpg">
+
+		<h3>Recommended sports for pregnant women</h3>
+		<p>During pregnancy it is possible to play sports that do not endanger the fetus and the mother. It is advisable to avoid high impact sports or those that can cause falls or collisions.</p>
+
+		<p>Women who did not do sport before the pregnancy should start with mild and moderate exercises. Those who already exercised before pregnancy can continue doing it if the doctor advises it.</p>
+
+		<p>Here you can find some recommendations of sport for pregnant women:</p>
+		<ol style="list-style-type: circle;">
+			<li><strong>Swimming:</strong> many muscle groups are exercised and it helps to reduce back strain.</li>
+			<li><strong>Walking</strong> at a good pace without being exhausted: it facilitates blood circulation and helps to prevent circulatory problems.</li>
+			<li><strong>Dance</strong> at a light pace.</li>
+			<li><strong>Riding a bike</strong> on flat sites: it helps to tone and improves circulation. From the fifth month, a static bicycle is recommended to prevent falls.</li>
+			<li><strong>Yoga:</strong> improves body posture and helps to relax the body and mind, preparing the woman for childbirth.</li>
+			<li><strong>Pilates:</strong> increases flexibility and endurance and also promotes circulation in the abdominal area.</li>
+		</ol>
+
+		<p>The intensity and type of exercise appropriate for each woman will depend on the physical form prior to pregnancy and how gestation evolves.</p>
+
+		<p>Choose a sport that you like to feel comfortable, so you will enjoy and be relax while you are improving your health and your baby’s. Also exercising during pregnancy will help you to be in shape for the arrival of your baby and to be able to practice sport with him when he is born. Being "fit parents" is a trend.</p>
+
+		<p>Come on expectant mothers, put on your tracksuit and train!</p>
+		<br>
+		<hr>
+		<p>If you liked this article, subscribe to receive the latest news</p>
+
+		<form action="#">
+			<input type="email" name="email" id="email" placeholder="Enter Email">
+			<button type="submit" onclick="validate()">Subscribe</button>	
+		</form>
+		<br>
+	</div>
+
+	<footer>
+		<p>Pregnancy Health Care.</p>
+	</footer>
+
+	<script type="text/javascript">
+		function validate() {
+			var email = document.getElementById("email").value;
+
+			if (email == "") {
+				alert("Email Field is Required.");
+			} else {
+				alert("You are subscribed to our newsletter.");
+			}
+		}
+	</script>
 </body>
 </html>
